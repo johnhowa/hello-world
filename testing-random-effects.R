@@ -1,4 +1,6 @@
-require(lmerTest)
+library(lmerTest)
+library(tidyverse)
+
 test_data_means <- rnorm(10, 0, 6)
 test_data_sds <- rep(1,10)
 test_data_bias <- data.frame(bias_basis = c(rep("lab 1", 5), rep("lab 2", 5)), bias_value = c(rep(0,5), rep(1,5)))
